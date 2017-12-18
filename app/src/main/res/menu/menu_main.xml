@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.darpal.demo5.com.foodlabrinth.darpal.demo5.MainActivity">
+
+
+    <item
+        android:id="@+id/profile"
+        android:orderInCategory="200"
+        android:title="View My Profile"
+        android:visible="true"
+        app:showAsAction="always" />
+
+
+
+
+</menu>

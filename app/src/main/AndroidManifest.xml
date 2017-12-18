@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.doorstepservice.darpal.doorstepservice">
+
+    <permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:protectionLevel="dangerous" />
+    <permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        android:protectionLevel="dangerous" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TypeOfServiceListActivity"
+            android:label=" ">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.doorstepservice.darpal.doorstepservice.MainActivity" />
+        </activity>
+        <activity
+            android:name=".UserLogin.UserLoginActivity"
+            android:label="Login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.doorstepservice.darpal.doorstepservice.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ServiceDisplayActivity"
+            android:label="">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.doorstepservice.darpal.doorstepservice.TypeOfServiceListActivity" />
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".VendorsMapActivity"
+            android:label="@string/title_activity_vendors_map" />
+        <activity
+            android:name=".ConfirmationPageActivity"
+            android:label="">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.doorstepservice.darpal.doorstepservice.MainActivity" />
+        </activity>
+        <activity
+            android:name=".OrderHistoryActivity"
+            android:label="History">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.doorstepservice.darpal.doorstepservice.UserLogin.UserLoginActivity" />
+        </activity>
+        <activity android:name=".CancelOrderActivity" />
+        <activity
+            android:name=".FeedsActivity"
+            android:label="Feeds">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.doorstepservice.darpal.doorstepservice.MainActivity" />
+        </activity>
+        <activity android:name=".AboutUsActivity"
+            android:label="About Us">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.doorstepservice.darpal.doorstepservice.UserLogin.UserLoginActivity" />
+        </activity>
+    </application>
+
+</manifest>

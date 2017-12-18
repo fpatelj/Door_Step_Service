@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/relativeLayout"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainpage"
+    android:orientation="vertical"
+    tools:context="com.example.darpal.doorstepservice.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transp"
+        android:id="@+id/transparent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/title_from_to_dots_divider"
+        android:layout_width="120dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/floating_search_view"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:paddingEnd="20dp"
+        android:layout_marginLeft="40dp"
+        android:src="@color/button" />
+
+    <TextView
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:text="Order Service in Seconds"
+        android:layout_below="@id/title_from_to_dots_divider"
+        android:layout_marginLeft="40dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/floating_search_view"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Enter Zip code or City"
+        android:textColor="#b9b9b9"
+        android:drawableStart="@drawable/search"
+        android:layout_marginTop="30dp"
+        android:background="#f3f3f3"
+        android:elevation="0dp" />
+
+
+    <Button
+        android:id="@+id/userlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feeds"
+        android:id="@+id/feed"
+        android:layout_above="@+id/userlogin"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

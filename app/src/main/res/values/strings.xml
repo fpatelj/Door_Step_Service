@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Door Step Service</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nameerror">Enter Valid Name</string>
+    <string name="passworderror">Enter valid Password</string>
+    <string name="mobileerror">Enter Valid Mobile Number</string>
+    <string name="title_activity_vendors_map">Map</string>
+    <string name="google_maps_api_key">AIzaSyDC__Vwrx1rkcjWQd__yhF7msedYaSjgL4</string>
+    <string name="mail_feedback_subject">Feedback</string>
+    <string name="mail_feedback_email">darpaldhyani2014@gmail.com</string>
+    <string name="title_send_feedback">Send us a Feedback..</string>
+    <string name="mail_feedback_message">To Developer,</string>
+</resources>

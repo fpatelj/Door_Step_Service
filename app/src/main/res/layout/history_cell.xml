@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/background"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <!-- LEFT TITLE PART -->
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="230dp"
+        android:layout_weight="3"
+        android:background="@color/background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+
+        <TextView
+            android:id="@+id/title_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/title_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/title_time_label"
+            android:layout_alignParentStart="true"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="28dp" />
+
+
+    </RelativeLayout>
+    <!-- RIGHT TITLE PART -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:paddingBottom="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="20dp">
+
+
+        <TextView
+            android:id="@+id/storeDispName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:text="Store Name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/title_from_to_dots_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/storeDispName"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="20dp"
+            android:src="#9e9e9e" />
+
+        <TextView
+            android:id="@+id/title_to_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_from_to_dots_divider"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:text="Store Address"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/title_from_to_dots_divider_two"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/title_to_address"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="20dp"
+            android:src="#9e9e9e" />
+
+        <TextView
+            android:id="@+id/orderdisp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_from_to_dots_divider_two"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="Order ID:"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_from_to_dots_divider_two"
+            android:layout_toEndOf="@+id/orderdisp"
+            android:ellipsize="marquee"
+            android:layout_marginLeft="5dp"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="Order ID"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/title_from_to_dots_divider_three"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/orderid"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="20dp"
+            android:src="#9e9e9e" />
+
+        <TextView
+            android:id="@+id/servicedsip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_from_to_dots_divider_three"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="Services:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/service_booked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_from_to_dots_divider_three"
+            android:layout_toEndOf="@+id/servicedsip"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:text="Service Booked"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review Store"
+            android:background="@color/background"
+            android:layout_alignParentBottom="true"/>
+
+
+
+    </RelativeLayout>
+</LinearLayout>
